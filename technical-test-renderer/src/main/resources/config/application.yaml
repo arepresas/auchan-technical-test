@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: technical-test-renderer
+  main:
+    web-application-type: reactive
