@@ -5,6 +5,12 @@ spring:
     web-application-type: reactive
   data:
     mongodb:
+      #authentication-database: admin
+      #username: root
+      #password: password
+      #database: webflux_db
+      #port: 27017
+      #host: localhost
       uri: mongodb://root:password@localhost:27000/webflux_db
 
 server:

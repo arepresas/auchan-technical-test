@@ -10,7 +10,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-
 .idea
 .idea_modules/
 .java-version
@@ -18,3 +17,5 @@ buildNumber.properties
 yarn.lock
 node_modules
 yarn-error.log
+
+dockerData
