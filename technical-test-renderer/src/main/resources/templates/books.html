@@ -3,18 +3,12 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Books</title>
-    <link crossorigin="anonymous"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
 <body>
-<div align="center" class="container my-2">
-
-    <h3>Library</h3>
-    <a class="btn btn-primary btn-sm mb-3" th:href="@{/books/save}">Add Book</a>
-    <table border="1" class="table table-striped table-responsive-md"
-           style="width:80%">
+<div class="container">
+    <h3 class="center-align">Library</h3>
+    <table class="striped">
         <thead>
         <tr>
             <th>Id</th>
@@ -28,11 +22,15 @@
             <td th:text="${book.title}"></td>
             <td th:text="${book.author.name}"></td>
             <td>
-                <a class="btn btn-danger" th:href="@{/books/delete/{id}(id=${book.id})}">Delete</a>
+                <a class="btn waves-effect waves-light red" th:href="@{/books/delete/{id}(id=${book.id})}">Delete</a>
             </td>
         </tr>
         </tbody>
     </table>
+    <div class="center-align">
+        <a class="btn waves-effect waves-light" th:href="@{/books/save}">Add Book</a>
+    </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
